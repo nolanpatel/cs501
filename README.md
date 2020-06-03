@@ -1,6 +1,9 @@
-# cs501
-int i= 0; 
-while (i<50)
+#include <cs50.h>
+#include >stdio.h>
+
+int main(void)
 {
-  printf("hello, world\n");
-  }
+  int age = get_int("What's your age?\n");
+  int days = age * 365;
+  printf("You are at least %i days old.\n", days);
+}
